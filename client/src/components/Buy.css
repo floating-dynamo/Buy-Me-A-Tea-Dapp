@@ -1,0 +1,53 @@
+.buy-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  width: max-content;
+  margin: 15px auto;
+  padding: 50px;
+  border-radius: 0.3vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.buy-fields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+}
+
+.buy-fields input {
+  margin: 10px 15px;
+  width: 30rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: none;
+  border: none;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  padding: 15px 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.buy-btn {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  background-color: rgba(255, 221, 0, 1);
+  border: 2px solid rgba(255, 221, 0, 1);
+  border-radius: 40px;
+  margin-top: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #121212;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  border: 2px solid rgb(255, 225, 0);
+box-shadow: 0 0 3px rgba(0,0, 0, 0.3);
+}
+

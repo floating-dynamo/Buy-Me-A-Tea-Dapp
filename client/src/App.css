@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+.app-title{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  width: max-content;
+  margin: 50px auto;
+  padding: 10px 30px;
+  border-radius: 1.85rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.acc-connected{
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+  border-radius: 100%;
+  margin: 0 10px;
+}
+
+.acc-disconnected{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 100%;
+  margin: 0 10px;
+}
+
+.app-account-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
