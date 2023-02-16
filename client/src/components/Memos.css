@@ -1,0 +1,22 @@
+.memo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    width: max-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 0.3vw;
+}
+
+.memo p{
+    margin: 0 20px;
+}
+
+#memo-name{
+    font-weight: bold;
+}
+
+#memos-title{
+    margin-top: 50px;
+}

@@ -51,7 +51,7 @@ function App() {
       <h1 className="app-title">Buy Sridhar Maskeri A Tea ☕</h1>
       <p className="app-account-title"><div className={account!=='None'?"acc-connected":"acc-disconnected"} /> Connected Account - {account}</p>
       <Buy state={state}/>
-      <Memos/>
+      <Memos state={state}/>
     </div>
   );
 }
