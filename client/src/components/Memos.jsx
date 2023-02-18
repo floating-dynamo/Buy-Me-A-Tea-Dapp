@@ -17,27 +17,21 @@ const Memos = ({ state }) => {
   if (memos.length === 0) {
     return (
       <>
-        <h1 id="memos-title">Transactions</h1>
-        <div className="memo">
-          <p id="memo-name">Sridhar Maskeri</p>
-          <p id="memo-timestamp">02/16/2023, 12:09:23 PM</p>
-          <p id="memo-message">Great going!</p>
-          <p id="memo-address">0x2135e6956d872a40c25235cb326397a10ce9499f</p>
-        </div>
+        <h1>No Transactions</h1>
       </>
     );
   }
 
   return (
     <div className="memos">
-      <h1>Transactions</h1>
+      <h1 id="memos-title">Transactions</h1>
       {memos.map((memo) => {
         return (
-          <div>
-            <p>{memo.name}</p>
-            <p>{memo.message}</p>
-            <p>{memo.from}</p>
-            <p>{memo.timestamp}</p>
+          <div class='memo' key={Math.random()}>
+            <p id='memo-name'>{memo.name}</p>
+            <p id='memo-timestamp'>{new Date(memo.timestamp * 1000).toLocaleString()}</p>
+            <p id="memo-message">{memo.message}</p>
+            <p id="memo-address">{memo.from}</p>
           </div>
         );
       })}

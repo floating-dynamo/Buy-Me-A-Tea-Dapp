@@ -9,8 +9,8 @@ const Buy = ({ state }) => {
     const name = document.getElementById("name").value;
     const message = document.getElementById("message").value;
     console.log(name, message, contract);
-    const amount = { value: ethers.utils.parseEther("0.000") };
-    const transaction = await contract.buyTea(name, contract);
+    const amount = { value: ethers.utils.parseEther("0.05") };
+    const transaction = await contract.buyTea(name, message, amount);
     await transaction.wait();
 
     console.log("Transaction Done ✅");
